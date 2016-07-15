@@ -46,7 +46,7 @@ public final class WebBeansLoggerFacade
 
     private static final WebBeansLoggerFactory FACTORY;
 
-    static final ResourceBundle WB_BUNDLE = ResourceBundle.getBundle("openwebbeans/Messages");
+    static final ResourceBundle WB_BUNDLE = ResourceBundleFactory.getBundle();
 
     static {
         final String factoryClassname = System.getProperty(OPENWEBBEANS_LOGGING_FACTORY_PROP);
